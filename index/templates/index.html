@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #480576; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .menu {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #295693; 
+            box-shadow: 0px 0px 10px 0px rgba(3, 247, 255, 0.911);
+        }
+        h1 {
+            color: #6dcf7a; /* Violeta oscuro */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            border-radius: 15px;
+            text-decoration: none;
+            color: #fff; /* Morado */
+            font-weight: bold;
+        }
+        a:hover {
+            color: #00eeff; /* Púrpura */
+        }
+        button {
+            background-color: #480576;
+            margin: 15px;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px; /* Ajustar el padding para cambiar el tamaño */
+            font-size: 18px; /* Ajustar el tamaño del texto */
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #359B45; /* Color del botón al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>Menú de Inicio</h1>
+        <ul>
+            <li><button href="{% url 'cod14_index' %}"><a href="{% url 'cod14_index' %}">Codigo 14: MODELO DE SELECCION</a></button></li>
+            <li><button href="{% url 'cod15_index' %}"><a href="{% url 'cod15_index' %}">Codigo 15: MODELO DE EXTRACCION DE CARACTERISTICAS</a></button></li>
+            <li><button href="{% url 'cod16_index' %}"><a href="{% url 'cod16_index' %}">Codigo 16: MODELO DE SELECCION DE MODELO</a></button></li>
+            <li><button href="{% url 'cod17_index' %}"><a href="{% url 'cod17_index' %}">Codigo 17: Detecciขn de transacciones bancarias fraudulentas</a></button></li>
+            <li><button href="{% url 'cod18_index' %}"><a href="{% url 'cod18_index' %}">Codigo 18: Detecciขn de transacciones bancarias fraudulentas</a></button></li>
+        </ul>
+    </div>
+</body>
+</html>

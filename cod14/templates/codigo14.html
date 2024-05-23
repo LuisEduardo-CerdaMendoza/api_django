@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Datos del Codigo 14</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #4B0199; /* Lila clarito */
+            color: #fff; /* Color de texto */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #293ca8;
+            box-shadow: 0 0 10px rgb(150, 47, 15);
+        }
+        h1 {
+            color: #D0D0D0; /* Morado */
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Puntajes F1</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Puntaje F1 (Validación): {{ f1_scores_val }}</p>
+                <p>Y_Pred (Validación): {{ y_pred }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Datos del Codigo 16</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #4B0199; /* Lila clarito */
+            color: #fff; /* Color de texto */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #cc307e;
+            box-shadow: 0 0 10px rgb(4, 14, 156);
+        }
+        h1 {
+            color: #D0D0D0; /* Morado */
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Información del Conjunto de Datos</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Longitud del conjunto de datos</h2>
+                <p>{{longitudconjdatos}}</p>
+            </div>
+            <div class="col-md-12">
+                <h2>Número de características del conjunto de datos</h2>
+                <p>{{ numcaracter }}</p>
+            </div>
+            <div class="col-md-12">
+                <h2>Conjunto de datos</h2>
+                <p>{{conjuntodatos}}</p>
+            </div>
+            <div class="col-md-12">
+                <h2>Predicción con el conjunto de datos de entrenamiento</h2>
+                <p>{{ prediccionconjdatos }}</p>
+            </div>
+            <div class="col-md-12">
+                <h2>Puntaje F1</h2>
+                <p>Puntaje F1 (Validación): {{ f1_scores_val }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

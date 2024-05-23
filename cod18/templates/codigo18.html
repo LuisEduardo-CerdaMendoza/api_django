@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Datos del Codigo 15</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4B0199;
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Color de texto */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #8b8b8b;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #D0D0D0;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .col-md-6 {
+            flex-basis: calc(50% - 10px);
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgb(33, 12, 129);
+        }
+        p {
+            color: #000;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Visualización de Datos</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Grafica 1</h2>
+                <img src="data:image/png;base64,{{ graficas18 }}" alt="Grafica 1">
+            </div>
+            <div class="col-md-6">
+                <h2>Grafica 2</h2>
+                <img src="data:image/png;base64,{{ graficas182 }}" alt="Grafica 2">
+            </div>
+            <div class="col-md-6">
+                <h2>Grafica 3</h2>
+                <img src="data:image/png;base64,{{ graficas183 }}" alt="Grafica 2">
+            </div>
+            <div class="col-md-6">
+                <h2>Grafica 4</h2>
+                <img src="data:image/png;base64,{{ graficas184 }}" alt="Grafica 2">
+            </div>
+            <div class="col-md-6">
+                <h2>Grafica 5</h2>
+                <img src="data:image/png;base64,{{ graficas185 }}" alt="Grafica 2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Purity_Score</h2>
+                <p>Purity_Score: {{ purity }}</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Datos de Shiloutte</h2>
+                <p>Shiloutte: {{ shiloutte }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Calinski_harabasz</h2>
+                <p>Calinski_harabasz: {{ calinski }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
